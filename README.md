@@ -59,6 +59,7 @@ Basic usage:
 - `--skip-rotation` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skip rotation and ProRes conversion (use existing intermediate file)
 - `--quality <level>` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set quality (`medium` [default], `high`, or `best`)
 - `--keep-intermediate` &nbsp;&nbsp;Keep the intermediate ProRes file after processing
+- `--disable-hwaccel` &nbsp;&nbsp;&nbsp;&nbsp;Disable hardware acceleration and force software encoding
 
 ### Example Commands
 
@@ -78,6 +79,18 @@ Basic usage:
 
   ```zsh
   ./rotate-your-phone.sh "FREYA_2024.mp4" --keep-intermediate
+  ```
+
+- Disable hardware acceleration:
+
+  ```zsh
+  ./rotate-your-phone.sh "FREYA_2024.mp4" --disable-hwaccel
+  ```
+
+- Combine options:
+
+  ```zsh
+  ./rotate-your-phone.sh "FREYA_2024.mp4" --skip-thumbnails --quality best --keep-intermediate --disable-hwaccel
   ```
 
 ## Output
