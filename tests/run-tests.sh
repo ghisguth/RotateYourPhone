@@ -373,7 +373,7 @@ main() {
     # Define all possible test scenarios: scenario_name|quality|skip_thumbnails|additional_arguments|scenario_source|test_files
     ALL_TEST_SCENARIOS=(
       # name|quality|skip_thumbnails|additional_args|scenario_source|test_files
-      #"best|best|false||best|"
+      "best|best|false||best|"
       "fast|fast|true||fast|"
       "medium|medium|true||medium|"
       "high|high|true||high|"
