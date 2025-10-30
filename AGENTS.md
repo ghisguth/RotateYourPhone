@@ -46,3 +46,14 @@ When working on this project, please adhere to the following guidelines:
 -   Always run the test suite before and after making any changes.
 -   If your changes affect the output of the script, update the test data using the `--update-test-data` flag.
 -   Do not modify the intro video (`media/RotateYourPhoneHD.mp4`) unless specifically instructed to do so.
+-   If `ffmpeg` or `imagemagick` are not installed, you can install them using the following commands:
+    ```shell
+    #!/bin/bash
+    set -e
+
+    # Update the package manager's list of available packages
+    sudo apt-get update
+
+    # Install ffmpeg and imagemagick
+    sudo apt-get install -y ffmpeg imagemagick
+    ```
